@@ -19,15 +19,15 @@ if (form) {
     })
 }
 
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-Window.onscroll = () => {
+const scrollToBtn = document.getElementById("scrollTopBtn");
+window.onscroll = () => {
     if(document.documentElement.scrollTop > 200) {
-        scrollTopBtn.style.display = "block";
+        scrollToBtn.style.display = "block";
     } else {
-        scrollTopBtn.style.display = "none";
+        scrollToBtn.style.display = "none";
     }
 }
 
-scrollTopBtn.addEventListener('click', () => {
+scrollToBtn.addEventListener('click', () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 });
